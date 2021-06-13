@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="main">
+    <div class="nav">
+      <h1>Master switch</h1>
+      <label class="switch">
+        <input
+          id="MasterSwitch"
+          onclick="masterHandle()"
+          type="checkbox"
+          checked
+        />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div id="body" class="body">
+      <div class="unit">
+        <h1>unit 1</h1>
+        <div id="box1" class="box"></div>
+        <label class="switch">
+          <input id="Unit1Switch" onclick="unit1Handle()" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="unit">
+        <h1>unit 2</h1>
+        <div id="box2" class="box"></div>
+        <label class="switch">
+          <input id="Unit2Switch" onclick="unit2Handle()" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
